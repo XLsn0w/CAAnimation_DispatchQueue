@@ -26,6 +26,14 @@
                                     <action selector="xValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0x1-eb-HIo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-lK-59f">
+                                <rect key="frame" x="80" y="617" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="frame移动"/>
+                                <connections>
+                                    <action selector="frameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bge-ep-Dcq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
