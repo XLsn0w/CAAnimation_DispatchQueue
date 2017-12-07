@@ -27,7 +27,6 @@ import UIKit
  animationWithKeyPath对应有哪些字符串
  [CABasicAnimation animationWithKeyPath:@"position"];
 
-
  position = 位置
  transform.scale = 比例缩放
  transform.scale.x = 宽的比例缩放

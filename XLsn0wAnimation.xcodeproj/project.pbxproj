@@ -13,7 +13,6 @@
 		3073C5DC1FD7D02D00DAF994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */; };
 		3073C5DF1FD7D02D00DAF994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5DD1FD7D02D00DAF994 /* LaunchScreen.storyboard */; };
 		3073C5E71FD7D3DA00DAF994 /* CoreAnimation_guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5E61FD7D3DA00DAF994 /* CoreAnimation_guide.swift */; };
-		3073C5E91FD7DCC700DAF994 /* CABasicAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5E81FD7DCC700DAF994 /* CABasicAnimationDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		3073C5DE1FD7D02D00DAF994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3073C5E01FD7D02D00DAF994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3073C5E61FD7D3DA00DAF994 /* CoreAnimation_guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimation_guide.swift; sourceTree = "<group>"; };
-		3073C5E81FD7DCC700DAF994 /* CABasicAnimationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABasicAnimationDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 			children = (
 				3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */,
 				3073C5D61FD7D02D00DAF994 /* ViewController.swift */,
-				3073C5E81FD7DCC700DAF994 /* CABasicAnimationDemo.swift */,
 				3073C5E61FD7D3DA00DAF994 /* CoreAnimation_guide.swift */,
 				3073C5D81FD7D02D00DAF994 /* Main.storyboard */,
 				3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */,
@@ -145,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3073C5E91FD7DCC700DAF994 /* CABasicAnimationDemo.swift in Sources */,
 				3073C5E71FD7D3DA00DAF994 /* CoreAnimation_guide.swift in Sources */,
 				3073C5D71FD7D02D00DAF994 /* ViewController.swift in Sources */,
 				3073C5D51FD7D02D00DAF994 /* AppDelegate.swift in Sources */,

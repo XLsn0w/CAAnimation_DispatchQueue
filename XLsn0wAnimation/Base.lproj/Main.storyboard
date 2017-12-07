@@ -18,40 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-Dx-evH">
-                                <rect key="frame" x="1" y="617" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="xy基础位移"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-Dx-evH">
+                                <rect key="frame" x="124" y="156" width="126" height="30"/>
+                                <state key="normal" title="CABasicAnimation"/>
                                 <connections>
                                     <action selector="xValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0x1-eb-HIo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z1-sq-wbB">
-                                <rect key="frame" x="57" y="465" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-lK-59f">
+                                <rect key="frame" x="110" y="240" width="154" height="30"/>
+                                <state key="normal" title="CAKeyframeAnimation"/>
+                                <connections>
+                                    <action selector="frameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bge-ep-Dcq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQh-4d-s6h">
+                                <rect key="frame" x="145" y="318" width="86" height="30"/>
+                                <state key="normal" title="CATransition"/>
+                                <connections>
+                                    <action selector="TransitionAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ec1-4M-kFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeZ-qW-lhv">
+                                <rect key="frame" x="122" y="391" width="131" height="30"/>
+                                <state key="normal" title="CAAnimationGroup"/>
+                                <connections>
+                                    <action selector="animationGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aqm-Dd-5hY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z1-sq-wbB">
+                                <rect key="frame" x="149" y="504" width="79" height="30"/>
                                 <state key="normal" title="UIView动画"/>
                                 <connections>
                                     <action selector="UIViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U20-oU-R9z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQh-4d-s6h">
-                                <rect key="frame" x="84" y="331" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="翻转动画"/>
-                                <connections>
-                                    <action selector="TransitionAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ec1-4M-kFu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-lK-59f">
-                                <rect key="frame" x="180" y="581" width="121" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="frame-values移动"/>
-                                <connections>
-                                    <action selector="frameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bge-ep-Dcq"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Z1-sq-wbB" secondAttribute="bottom" constant="133" id="0jR-jj-lx5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ih9-lK-59f" secondAttribute="trailing" constant="111" id="1vA-jp-dR6"/>
+                            <constraint firstItem="Ih9-lK-59f" firstAttribute="top" secondItem="ewy-Dx-evH" secondAttribute="bottom" constant="54" id="7Pd-E7-5ut"/>
+                            <constraint firstItem="yeZ-qW-lhv" firstAttribute="top" secondItem="sQh-4d-s6h" secondAttribute="bottom" constant="43" id="DCW-HD-T9Q"/>
+                            <constraint firstItem="ewy-Dx-evH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="136" id="FOm-NE-UZS"/>
+                            <constraint firstItem="sQh-4d-s6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="HL9-uD-E8d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ewy-Dx-evH" secondAttribute="trailing" constant="125" id="KGS-7W-Xu2"/>
+                            <constraint firstItem="Ih9-lK-59f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="TFd-be-dVA"/>
+                            <constraint firstItem="sQh-4d-s6h" firstAttribute="top" secondItem="Ih9-lK-59f" secondAttribute="bottom" constant="48" id="fZO-eS-zwz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yeZ-qW-lhv" secondAttribute="trailing" constant="122" id="gvs-9M-hEK"/>
+                            <constraint firstItem="0Z1-sq-wbB" firstAttribute="top" secondItem="yeZ-qW-lhv" secondAttribute="bottom" constant="83" id="lQ9-U4-EkD"/>
+                            <constraint firstItem="0Z1-sq-wbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="n5c-hb-96g"/>
+                            <constraint firstItem="ewy-Dx-evH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="rMo-q8-Tw6"/>
+                            <constraint firstItem="yeZ-qW-lhv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="raW-zM-Kf5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sQh-4d-s6h" secondAttribute="trailing" constant="144" id="uNK-kT-mMr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Z1-sq-wbB" secondAttribute="trailing" constant="147" id="wj1-ag-vBF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
