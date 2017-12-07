@@ -1,4 +1,64 @@
 //  Copyright © 2017年 XLsn0w. All rights reserved.
+/*
+ CALayer Animatable Properties
+ 我们可以通过animationWithKeyPath键值对的方式来改变动画
+ 
+ keyPath的值：
+ 
+ anchorPoint
+ 
+ backgroundColor
+ 
+ backgroundFilters
+ 
+ borderColor
+ 
+ borderWidth
+ 
+ bounds
+ 
+ compositingFilter
+ 
+ contents
+ 
+ contentsRect
+ 
+ cornerRadius
+ 
+ doubleSided
+ 
+ filters
+ 
+ frame
+ 
+ hidden
+ 
+ mask
+ 
+ masksToBounds
+ 
+ opacity
+ 
+ position
+ 
+ shadowColor
+ 
+ shadowOffset
+ 
+ shadowOpacity
+ 
+ shadowRadius
+ 
+ sublayers
+ 
+ sublayerTransform
+ 
+ transform
+ 
+ zPosition
+
+ */
+
 import UIKit
 
 class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
@@ -41,11 +101,11 @@ class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
         }
     }
 
-    /// 关键帧动画
 //    EaseInOut  //动画由慢变快再变慢
 //    EaseIn     //动画由慢变快
 //    EaseOut    //动画由快变慢
 //    Linear     //匀速动画
+    /// 关键帧动画
     @IBAction func frameAction(_ sender: Any) {
         
         ///CABasicAnimation     就是values 只有2个NSValue值
@@ -78,9 +138,16 @@ class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
     @IBAction func xValue(_ sender: Any) {
         let xBasicAnimation = CABasicAnimation(keyPath:"position")
         xBasicAnimation.fromValue = NSValue(cgPoint: CGPoint(x: 100, y: 100))
-        xBasicAnimation.toValue =   NSValue(cgPoint: CGPoint(x: 100, y: 300))
+        xBasicAnimation.toValue =   NSValue(cgPoint: CGPoint(x: 100, y: 330))
         xBasicAnimation.duration = 3.0
         xBasicAnimation.timingFunction = CAMediaTimingFunction(name: "easeInEaseOut")///names are `linear', `easeIn', `easeOut' and `easeInEaseOut' and `default'
+        
+        ///加上如下两行代码，那么在动画执行完毕后，图层会保持显示动画执行后的状态。
+        ///但在实质上，图层的属性值还是动画执行前的初始值，并没有真正被改变。
+        ///写在layer.add之前生效
+        xBasicAnimation.fillMode = kCAFillModeForwards;
+        xBasicAnimation.isRemovedOnCompletion = false;
+        
         demoView.layer.add(xBasicAnimation, forKey: nil)///key可以不设置 传nil
     }
     
@@ -108,7 +175,6 @@ class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
         transitionAnimation.subtype = kCATransitionFromTop; //设置动画的方向
         demoView.layer.add(transitionAnimation, forKey: nil)
     }
-
     
     ///CAAnimationGroup
     @IBAction func animationGroup(_ sender: Any) {
@@ -146,101 +212,7 @@ class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
 //        [_wsView.layer addAnimation:groupAnimation forKey:@"groupAnimation"];
         demoView.layer.add(groupAnimation, forKey: nil)
     }
-    
-    /*
-     CALayer Animatable Properties
-     我们可以通过animationWithKeyPath键值对的方式来改变动画
-     
-     keyPath的值：
-     
-     anchorPoint
 
-     backgroundColor
-
-     backgroundFilters
-
-     borderColor
-
-     borderWidth
-
-     bounds
-
-     compositingFilter
-
-     contents
-     
-     contentsRect
-
-     cornerRadius
-
-     doubleSided
-
-     filters
-
-     frame
-
-     hidden
-
-     mask
-
-     masksToBounds
-
-     opacity
-
-     position
-
-     shadowColor
-
-     shadowOffset
-
-     shadowOpacity
-
-     shadowRadius
-
-     sublayers
-
-     sublayerTransform
-
-     transform
-
-     zPosition
-
-     
-     
-     */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     override func didReceiveMemoryWarning() {
