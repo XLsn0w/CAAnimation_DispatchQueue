@@ -19,11 +19,48 @@ class ViewController: UIViewController, CAAnimationDelegate {
         self.view.addSubview(demoView)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+ /* UIView Animation
+    _wsView.transform = CGAffineTransformIdentity;
+    [UIView animateWithDuration:1.0f animations:^{
+    _wsView.transform = CGAffineTransformMakeTranslation(100, 0);
+    }];
+    [UIView animateWithDuration:1.0f animations:^{
+    CGAffineTransform transform1 = CGAffineTransformMakeRotation(M_PI);
+    CGAffineTransform transform2 = CGAffineTransformScale(transform1, 0.5, 0.5);
+    _wsView.transform = CGAffineTransformTranslate(transform2, -200, 0);
+    }];
+    [UIView animateWithDuration:1.0f animations:^{
+    //反转
+    _wsView.transform = CGAffineTransformInvert(CGAffineTransformMakeScale(11, 11));
+    }];
+    
+    CGAffineTransformIdentity
+    CGAffineTransform.identity
+
+    CGAffineTransformMakeScale(2, 2)
+    CGAffineTransform(scaleX: 2, y: 2)
+
+    CGAffineTransformMakeTranslation(128, 128)
+    CGAffineTransform(translationX: 128, y: 128)
+
+    CGAffineTransformMakeRotation(CGFloat(M_PI))
+    CGAffineTransform(rotationAngle: CGFloat(M_PI))
+  */
+    @IBAction func UIViewAnimation(_ sender: Any) {
+        demoView.transform = CGAffineTransform.identity
+        UIView.animate(withDuration: 3.0) {
+//            self.demoView.transform = CGAffineTransform(translationX: 128, y: 128)          ///平移
+//            self.demoView.transform = CGAffineTransform(scaleX: 5, y: 5)                    ///缩放
+//            self.demoView.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))  ///旋转
+            
+//            self.demoView.transform = CGAffineTransformInvert(scaleX: 5, y: 5)
+//            self.demoView.transform = CGAffineTransformTranslate(CGAffineTransform(scaleX: 5, y: 5), 120.0, 100)
+
+        }
     }
 
+    /// 关键帧动画
     @IBAction func frameAction(_ sender: Any) {
         
         ///CABasicAnimation     就是values 只有2个NSValue值
@@ -52,6 +89,7 @@ class ViewController: UIViewController, CAAnimationDelegate {
         demoView.layer.add(valuesAnimation, forKey: "keyFrameAnimation")
     }
     
+    ///基础动画
     @IBAction func xValue(_ sender: Any) {
         let xBasicAnimation = CABasicAnimation(keyPath:"position")
         xBasicAnimation.fromValue = NSValue(cgPoint: CGPoint(x: 10, y: 0))
@@ -61,5 +99,57 @@ class ViewController: UIViewController, CAAnimationDelegate {
         demoView.layer.add(xBasicAnimation, forKey: "positionAnimation")
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    } 
 }
 
