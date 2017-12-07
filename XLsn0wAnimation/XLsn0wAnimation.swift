@@ -3,6 +3,7 @@ import UIKit
 
 class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
 
+    ///objc代码直接在swift代码注释中 双语言动画总结
     let demoView = UIView(frame: CGRect(x: 20, y: 20, width: 100, height: 100))
     
     override func viewDidLoad() {

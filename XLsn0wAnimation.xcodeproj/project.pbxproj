@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3033F8B11FD91D7C0085A3D9 /* AnimationXLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 3033F8B01FD91D7C0085A3D9 /* AnimationXLsn0w.m */; };
 		3073C5D51FD7D02D00DAF994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */; };
 		3073C5D71FD7D02D00DAF994 /* XLsn0wAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */; };
 		3073C5DA1FD7D02D00DAF994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5D81FD7D02D00DAF994 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		3033F8AA1FD8E0E90085A3D9 /* XLsn0wAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLsn0wAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		3033F8AF1FD91D7C0085A3D9 /* AnimationXLsn0w.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationXLsn0w.h; sourceTree = "<group>"; };
+		3033F8B01FD91D7C0085A3D9 /* AnimationXLsn0w.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationXLsn0w.m; sourceTree = "<group>"; };
 		3073C5D11FD7D02D00DAF994 /* XLsn0wAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLsn0wAnimation.swift; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 				3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */,
 				3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */,
 				3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */,
+				3033F8AF1FD91D7C0085A3D9 /* AnimationXLsn0w.h */,
+				3033F8B01FD91D7C0085A3D9 /* AnimationXLsn0w.m */,
 				3073C5D81FD7D02D00DAF994 /* Main.storyboard */,
 				3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */,
 				3073C5DD1FD7D02D00DAF994 /* LaunchScreen.storyboard */,
@@ -142,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3033F8B11FD91D7C0085A3D9 /* AnimationXLsn0w.m in Sources */,
 				3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */,
 				3073C5D71FD7D02D00DAF994 /* XLsn0wAnimation.swift in Sources */,
 				3073C5D51FD7D02D00DAF994 /* AppDelegate.swift in Sources */,
