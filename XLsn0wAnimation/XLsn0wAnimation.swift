@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, CAAnimationDelegate {
+class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
 
     let demoView = UIView(frame: CGRect(x: 20, y: 20, width: 100, height: 100))
     
