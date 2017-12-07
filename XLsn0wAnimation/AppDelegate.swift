@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  XLsn0wAnimation
-//
-//  Created by golong on 2017/12/6.
 //  Copyright © 2017年 XLsn0w. All rights reserved.
-//
 
 import UIKit
 

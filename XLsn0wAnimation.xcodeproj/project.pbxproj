@@ -12,7 +12,7 @@
 		3073C5DA1FD7D02D00DAF994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5D81FD7D02D00DAF994 /* Main.storyboard */; };
 		3073C5DC1FD7D02D00DAF994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */; };
 		3073C5DF1FD7D02D00DAF994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5DD1FD7D02D00DAF994 /* LaunchScreen.storyboard */; };
-		3073C5E71FD7D3DA00DAF994 /* CoreAnimation_guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5E61FD7D3DA00DAF994 /* CoreAnimation_guide.swift */; };
+		3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3073C5DE1FD7D02D00DAF994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3073C5E01FD7D02D00DAF994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3073C5E61FD7D3DA00DAF994 /* CoreAnimation_guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimation_guide.swift; sourceTree = "<group>"; };
+		3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationKeyPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		3073C5D31FD7D02D00DAF994 /* XLsn0wAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				3073C5E61FD7D3DA00DAF994 /* CoreAnimation_guide.swift */,
+				3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */,
 				3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */,
 				3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */,
 				3073C5D81FD7D02D00DAF994 /* Main.storyboard */,
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3073C5E71FD7D3DA00DAF994 /* CoreAnimation_guide.swift in Sources */,
+				3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */,
 				3073C5D71FD7D02D00DAF994 /* XLsn0wAnimation.swift in Sources */,
 				3073C5D51FD7D02D00DAF994 /* AppDelegate.swift in Sources */,
 			);
