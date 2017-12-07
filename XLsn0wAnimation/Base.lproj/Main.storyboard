@@ -19,27 +19,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-Dx-evH">
-                                <rect key="frame" x="20" y="617" width="39" height="30"/>
+                                <rect key="frame" x="1" y="617" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="x位移"/>
+                                <state key="normal" title="xy基础位移"/>
                                 <connections>
                                     <action selector="xValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0x1-eb-HIo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-lK-59f">
-                                <rect key="frame" x="80" y="617" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="frame移动"/>
-                                <connections>
-                                    <action selector="frameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bge-ep-Dcq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z1-sq-wbB">
-                                <rect key="frame" x="16" y="489" width="79" height="30"/>
+                                <rect key="frame" x="57" y="465" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="UIView动画"/>
                                 <connections>
                                     <action selector="UIViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U20-oU-R9z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQh-4d-s6h">
+                                <rect key="frame" x="84" y="331" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="翻转动画"/>
+                                <connections>
+                                    <action selector="TransitionAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ec1-4M-kFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-lK-59f">
+                                <rect key="frame" x="180" y="581" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="frame-values移动"/>
+                                <connections>
+                                    <action selector="frameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bge-ep-Dcq"/>
                                 </connections>
                             </button>
                         </subviews>

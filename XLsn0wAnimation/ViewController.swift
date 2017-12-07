@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, CAAnimationDelegate {
 
 //    var demoView:UIView?
-     let demoView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+     let demoView = UIView(frame: CGRect(x: 20, y: 20, width: 100, height: 100))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,7 +99,30 @@ class ViewController: UIViewController, CAAnimationDelegate {
         demoView.layer.add(xBasicAnimation, forKey: "positionAnimation")
     }
     
-    
+    ///CATransition 翻转动画
+    /*
+    types include
+    * `fade', `moveIn', `push' and `reveal' API包括4中动画类型   私有api不介绍了
+     
+     kCATransitionFade    //淡入淡出（默认）
+     
+     kCATransitionMoveIn  //移入
+     
+     kCATransitionPush    //压入
+     
+     kCATransitionReveal  //渐变
+
+    */
+    @IBAction func TransitionAnimation(_ sender: Any) {
+        let transitionAnimation = CATransition()
+//        transitionAnimation.type = kCATransitionFade;//设置动画的类型
+        transitionAnimation.type = kCATransitionMoveIn;
+//        transitionAnimation.type = kCATransitionPush;
+//        transitionAnimation.type = kCATransitionReveal;
+        transitionAnimation.duration = 5.0;
+        transitionAnimation.subtype = kCATransitionFromTop; //设置动画的方向
+        demoView.layer.add(transitionAnimation, forKey: nil)
+    }
     
     
     
