@@ -15,6 +15,7 @@
 		3073C5DF1FD7D02D00DAF994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5DD1FD7D02D00DAF994 /* LaunchScreen.storyboard */; };
 		3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */; };
 		30DC50581FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */; };
+		CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85659420B6663400B7DD95 /* AppBetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3073C5E01FD7D02D00DAF994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationKeyPath.swift; sourceTree = "<group>"; };
 		30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLsn0wDispatchQueue.swift; sourceTree = "<group>"; };
+		CD85659420B6663400B7DD95 /* AppBetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */,
 				3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */,
 				30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */,
+				CD85659420B6663400B7DD95 /* AppBetter.swift */,
 				3033F8AF1FD91D7C0085A3D9 /* AnimationXLsn0w.h */,
 				3033F8B01FD91D7C0085A3D9 /* AnimationXLsn0w.m */,
 				3073C5D81FD7D02D00DAF994 /* Main.storyboard */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30DC50581FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift in Sources */,
+				CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */,
 				3033F8B11FD91D7C0085A3D9 /* AnimationXLsn0w.m in Sources */,
 				3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */,
 				3073C5D71FD7D02D00DAF994 /* XLsn0wAnimation.swift in Sources */,

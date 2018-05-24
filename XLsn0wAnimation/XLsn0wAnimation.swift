@@ -69,7 +69,7 @@ class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         demoView.backgroundColor = .blue
-        self.view.addSubview(demoView)
+        view.addSubview(demoView)
     }
 
  /* UIView Animation
@@ -131,7 +131,7 @@ class XLsn0wAnimation: UIViewController, CAAnimationDelegate {
         valuesAnimation.delegate = self as CAAnimationDelegate
         
 //      [demoView.layer addAnimation:anima forKey:@"keyFrameAnimation"];
-        demoView.layer.add(valuesAnimation, forKey: "keyFrameAnimation")
+        demoView.layer.add(valuesAnimation, forKey: nil)
     }
     
     ///基础动画
