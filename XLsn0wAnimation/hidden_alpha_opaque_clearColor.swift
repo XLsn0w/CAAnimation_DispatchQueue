@@ -14,8 +14,7 @@ class hidden_alpha_opaque_clearColor: UIView {
     let view = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
 
     override func draw(_ rect: CGRect) {
-        
-       
+
         view.backgroundColor = UIColor.clear// 父视图还存在，只是颜色消失了，它仍有事件响应，子视图并没有受到影响
         view.alpha = 0///// 小于0.01,透明度就视为0了，也没有了响应事件，说明这个视图已经不存在了，子视图什么(显示与响应事件)的也都不存在了，类似第一种情况
         
@@ -25,7 +24,5 @@ class hidden_alpha_opaque_clearColor: UIView {
 //        [UIColor clearColor] --是将颜色设为透明.如果将控件backgroundColor设为[UIColor clearColor] ,则不会盖住其下面的控件视图.
 //        控件的属性:alpha--表示控件的透明度.将其设为0,表示该控件自身透明了.与背景色的透明是两个概念,注意区分.
     }
-    
-    
     
 }
