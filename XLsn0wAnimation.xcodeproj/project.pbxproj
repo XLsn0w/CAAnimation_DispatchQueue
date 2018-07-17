@@ -18,6 +18,7 @@
 		660A857B20FD9D7700D6F05C /* SemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660A857A20FD9D7700D6F05C /* SemaphoreViewController.m */; };
 		660AC4DE20FDD58500C865FF /* DispatchSemaphoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */; };
 		660AC4E720FDE3B000C865FF /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660AC4E620FDE3B000C865FF /* GCDViewController.m */; };
+		660AC4EA20FDF4A600C865FF /* CAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660AC4E920FDF4A600C865FF /* CAAnimationViewController.m */; };
 		66E0B06620FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */; };
 		CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85659420B6663400B7DD95 /* AppBetter.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,8 @@
 		660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchSemaphoreViewController.swift; sourceTree = "<group>"; };
 		660AC4E520FDE3B000C865FF /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		660AC4E620FDE3B000C865FF /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		660AC4E820FDF4A600C865FF /* CAAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAnimationViewController.h; sourceTree = "<group>"; };
+		660AC4E920FDF4A600C865FF /* CAAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAAnimationViewController.m; sourceTree = "<group>"; };
 		66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hidden_alpha_opaque_clearColor.swift; sourceTree = "<group>"; };
 		CD85659420B6663400B7DD95 /* AppBetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +90,8 @@
 				660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */,
 				660AC4E520FDE3B000C865FF /* GCDViewController.h */,
 				660AC4E620FDE3B000C865FF /* GCDViewController.m */,
+				660AC4E820FDF4A600C865FF /* CAAnimationViewController.h */,
+				660AC4E920FDF4A600C865FF /* CAAnimationViewController.m */,
 				3073C5D81FD7D02D00DAF994 /* Main.storyboard */,
 				3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */,
 				3073C5DD1FD7D02D00DAF994 /* LaunchScreen.storyboard */,
@@ -123,7 +128,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = XLsn0w;
 				TargetAttributes = {
 					3073C5D01FD7D02D00DAF994 = {
@@ -170,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30DC50581FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift in Sources */,
+				660AC4EA20FDF4A600C865FF /* CAAnimationViewController.m in Sources */,
 				660A857B20FD9D7700D6F05C /* SemaphoreViewController.m in Sources */,
 				660A857820FD967600D6F05C /* XLsn0wLayer.m in Sources */,
 				660AC4DE20FDD58500C865FF /* DispatchSemaphoreViewController.swift in Sources */,
@@ -218,6 +224,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -225,6 +232,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -275,6 +283,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -282,6 +291,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

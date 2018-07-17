@@ -54,6 +54,25 @@
         NSLog(@"down");
     });
 
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(10);//为了让一次输出10个，初始信号量为10
+
+    
+    for (int i = 0; i <100; i++) {
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);//每进来1次，信号量-1;进来10次后就一直hook住，直到信号量大于0；
+        dispatch_async(global_queue, ^{
+            NSLog(@"%i",i);
+            sleep(2);
+            dispatch_semaphore_signal(semaphore);//由于这里只是log,所以处理速度非常快，我就模拟2秒后信号量+1;
+        });
+    }
+    
+//    ///dispatch_barrier_async是在前面的任务执行结束后它才执行，而且它后面的任务等它执行完成之后才会执行
+//    通过dispatch_set_target_queue函数可以设置一个dispatch queue的优先级，或者指定一个dispatch source相应的事件处理提交到哪个queue上。
+    
+    
+    dispatch_apply(5, global_queue, ^(size_t i) {
+        // 执行5次
+    });
 }
 
 
