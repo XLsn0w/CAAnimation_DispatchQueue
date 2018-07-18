@@ -13,7 +13,15 @@ class DispatchSemaphoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       let Semaphore = DispatchSemaphore.init(value: 2)
+
+        ///信号量
+//        为了线程安全的统计数量，我们会使用信号量作计数。原来的dispatch_semaphore_t现在用DispatchSemaphore对象表示。
+//        初始化方法只有一个，传入一个Int类型的数。
+        let semaphore = DispatchSemaphore(value: 5)
+        
+ 
+        semaphore.wait()
+        semaphore.signal()
 
         
     }
