@@ -95,6 +95,20 @@
             });
         }
     });
+    
+    
+//    NSOperation是个抽象类，并不具备封装操作的能力，必须使用它的子类
+//    NSInvocationOperation
+//    NSBlockOperation
+//    自定义子类继承NSOperation，实现内部相应的方法
+    
+    //创建操作对象，封装要执行的任务
+    NSInvocationOperation *op =
+    [[NSInvocationOperation alloc] initWithTarget:self
+                                         selector:@selector(run)
+                                           object:nil];
+    //执行操作
+    [op start];
 }
 
 - (void)didReceiveMemoryWarning {
