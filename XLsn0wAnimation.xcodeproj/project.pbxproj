@@ -15,6 +15,8 @@
 		3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */; };
 		30DC50581FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */; };
 		6607BE1420FF081A00E7A90B /* OffScreenRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 6607BE1320FF081A00E7A90B /* OffScreenRendering.m */; };
+		6607BE1A20FF0BA300E7A90B /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6607BE1920FF0BA300E7A90B /* NSOperationViewController.m */; };
+		6607BE1D20FF115500E7A90B /* SubOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6607BE1C20FF115500E7A90B /* SubOperation.m */; };
 		660A857820FD967600D6F05C /* XLsn0wLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 660A857720FD967600D6F05C /* XLsn0wLayer.m */; };
 		660A857B20FD9D7700D6F05C /* SemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660A857A20FD9D7700D6F05C /* SemaphoreViewController.m */; };
 		660AC4DE20FDD58500C865FF /* DispatchSemaphoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */; };
@@ -39,6 +41,10 @@
 		30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLsn0wDispatchQueue.swift; sourceTree = "<group>"; };
 		6607BE1220FF081A00E7A90B /* OffScreenRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OffScreenRendering.h; sourceTree = "<group>"; };
 		6607BE1320FF081A00E7A90B /* OffScreenRendering.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OffScreenRendering.m; sourceTree = "<group>"; };
+		6607BE1820FF0BA300E7A90B /* NSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		6607BE1920FF0BA300E7A90B /* NSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
+		6607BE1B20FF115500E7A90B /* SubOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubOperation.h; sourceTree = "<group>"; };
+		6607BE1C20FF115500E7A90B /* SubOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubOperation.m; sourceTree = "<group>"; };
 		660A857620FD967600D6F05C /* XLsn0wLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLsn0wLayer.h; sourceTree = "<group>"; };
 		660A857720FD967600D6F05C /* XLsn0wLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLayer.m; sourceTree = "<group>"; };
 		660A857920FD9D7700D6F05C /* SemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreViewController.h; sourceTree = "<group>"; };
@@ -92,13 +98,13 @@
 				30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */,
 				CD85659420B6663400B7DD95 /* AppBetter.swift */,
 				66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */,
+				660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */,
 				660A857620FD967600D6F05C /* XLsn0wLayer.h */,
 				660A857720FD967600D6F05C /* XLsn0wLayer.m */,
 				661FAD7120FECFE000946543 /* XLsn0wView.h */,
 				661FAD7220FECFE000946543 /* XLsn0wView.m */,
 				660A857920FD9D7700D6F05C /* SemaphoreViewController.h */,
 				660A857A20FD9D7700D6F05C /* SemaphoreViewController.m */,
-				660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */,
 				660AC4E520FDE3B000C865FF /* GCDViewController.h */,
 				660AC4E620FDE3B000C865FF /* GCDViewController.m */,
 				660AC4E820FDF4A600C865FF /* CAAnimationViewController.h */,
@@ -107,6 +113,7 @@
 				661FAD7520FED2C700946543 /* DrawUIImage.m */,
 				6607BE1220FF081A00E7A90B /* OffScreenRendering.h */,
 				6607BE1320FF081A00E7A90B /* OffScreenRendering.m */,
+				6607BE1720FF09E400E7A90B /* NSOperation */,
 				3073C5D81FD7D02D00DAF994 /* Main.storyboard */,
 				3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */,
 				3073C5DD1FD7D02D00DAF994 /* LaunchScreen.storyboard */,
@@ -114,6 +121,17 @@
 				3033F8AA1FD8E0E90085A3D9 /* XLsn0wAnimation-Bridging-Header.h */,
 			);
 			path = XLsn0wAnimation;
+			sourceTree = "<group>";
+		};
+		6607BE1720FF09E400E7A90B /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				6607BE1820FF0BA300E7A90B /* NSOperationViewController.h */,
+				6607BE1920FF0BA300E7A90B /* NSOperationViewController.m */,
+				6607BE1B20FF115500E7A90B /* SubOperation.h */,
+				6607BE1C20FF115500E7A90B /* SubOperation.m */,
+			);
+			path = NSOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +211,7 @@
 				660AC4EA20FDF4A600C865FF /* CAAnimationViewController.m in Sources */,
 				660A857B20FD9D7700D6F05C /* SemaphoreViewController.m in Sources */,
 				661FAD7620FED2C700946543 /* DrawUIImage.m in Sources */,
+				6607BE1D20FF115500E7A90B /* SubOperation.m in Sources */,
 				660A857820FD967600D6F05C /* XLsn0wLayer.m in Sources */,
 				660AC4DE20FDD58500C865FF /* DispatchSemaphoreViewController.swift in Sources */,
 				CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */,
@@ -200,6 +219,7 @@
 				66E0B06620FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift in Sources */,
 				660AC4E720FDE3B000C865FF /* GCDViewController.m in Sources */,
 				6607BE1420FF081A00E7A90B /* OffScreenRendering.m in Sources */,
+				6607BE1A20FF0BA300E7A90B /* NSOperationViewController.m in Sources */,
 				3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */,
 				3073C5D71FD7D02D00DAF994 /* XLsn0wAnimation.swift in Sources */,
 				3073C5D51FD7D02D00DAF994 /* AppDelegate.swift in Sources */,

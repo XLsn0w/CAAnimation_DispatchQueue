@@ -49,7 +49,7 @@
 
 
 - (UIImage*)draw_another_image_on_Image {///在UIImage上绘制另一个图像
-    CGFloat width, height;
+    CGFloat width = 0.0, height = 0.0;
     UIImage *inputImage;    // input image to be composited over new image as example
     
     // create a new bitmap image context at the device resolution (retina/non-retina)
