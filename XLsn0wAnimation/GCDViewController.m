@@ -73,9 +73,16 @@
     dispatch_apply(5, global_queue, ^(size_t i) {
         // 执行5次
     });
+    
+    //顺便提一个几个通知主线程更新UI的方法
+//    - (void)performSelectorOnMainThread:(SEL)aSelector withObject:(id)arg waitUntilDone:(BOOL)wait
+//
+//    (void)performSelector:(SEL)aSelector onThread:(NSThread *)thr withObject:(id)arg waitUntilDone:(BOOL) wait;方法传递主线程[NSThread mainThread])
+//
+//    [NSOperationQueue mainQueue] addOperationWithBlock:
+//
+//    dispatch_sync(dispatch_get_main_queue(), ^{})
 }
-
-
 
 - (void)touchUpInsideByThreadOne:(id)sender {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

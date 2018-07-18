@@ -41,5 +41,4 @@
     return [XLsn0wLayer class];
 }
 
-
 @end
