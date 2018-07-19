@@ -16,8 +16,7 @@
 #import "MaskLayerTestVC.h"
 #import "EmitterLayerTestVC.h"
 
-@interface ViewController ()
-{
+@interface ViewController () {
     NSArray<NSString *> *_tests;
 }
 

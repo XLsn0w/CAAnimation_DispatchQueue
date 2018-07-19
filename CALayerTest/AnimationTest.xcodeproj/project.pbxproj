@@ -132,11 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				885486CD1E2F5F3700D9740B /* Launch Screen.storyboard */,
+				880D19A11E29CC0A00A0D3C8 /* Assets.xcassets */,
 				880D19981E29CC0A00A0D3C8 /* AppDelegate.h */,
 				880D19991E29CC0A00A0D3C8 /* AppDelegate.m */,
 				880D199B1E29CC0A00A0D3C8 /* ViewController.h */,
 				880D199C1E29CC0A00A0D3C8 /* ViewController.m */,
-				880D19A11E29CC0A00A0D3C8 /* Assets.xcassets */,
 				880D19C81E29CCB800A0D3C8 /* MoveLogoImg.h */,
 				880D19C91E29CCB800A0D3C8 /* MoveLogoImg.m */,
 				885486CA1E2F571200D9740B /* SimpleAnimeVC.h */,
