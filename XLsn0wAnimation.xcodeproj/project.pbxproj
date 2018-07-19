@@ -92,27 +92,10 @@
 		3073C5D31FD7D02D00DAF994 /* XLsn0wAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */,
 				3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */,
-				3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */,
-				30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */,
-				CD85659420B6663400B7DD95 /* AppBetter.swift */,
-				66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */,
-				660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */,
-				660A857620FD967600D6F05C /* XLsn0wLayer.h */,
-				660A857720FD967600D6F05C /* XLsn0wLayer.m */,
-				661FAD7120FECFE000946543 /* XLsn0wView.h */,
-				661FAD7220FECFE000946543 /* XLsn0wView.m */,
-				660A857920FD9D7700D6F05C /* SemaphoreViewController.h */,
-				660A857A20FD9D7700D6F05C /* SemaphoreViewController.m */,
-				660AC4E520FDE3B000C865FF /* GCDViewController.h */,
-				660AC4E620FDE3B000C865FF /* GCDViewController.m */,
-				660AC4E820FDF4A600C865FF /* CAAnimationViewController.h */,
-				660AC4E920FDF4A600C865FF /* CAAnimationViewController.m */,
-				661FAD7420FED2C700946543 /* DrawUIImage.h */,
-				661FAD7520FED2C700946543 /* DrawUIImage.m */,
-				6607BE1220FF081A00E7A90B /* OffScreenRendering.h */,
-				6607BE1320FF081A00E7A90B /* OffScreenRendering.m */,
+				6655630121002422007865E1 /* CAAnimation */,
+				66556300210023F9007865E1 /* PerformanceOptimization */,
+				665562FF2100237E007865E1 /* DispatchQueue */,
 				6607BE1720FF09E400E7A90B /* NSOperation */,
 				3073C5D81FD7D02D00DAF994 /* Main.storyboard */,
 				3073C5DB1FD7D02D00DAF994 /* Assets.xcassets */,
@@ -132,6 +115,47 @@
 				6607BE1C20FF115500E7A90B /* SubOperation.m */,
 			);
 			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		665562FF2100237E007865E1 /* DispatchQueue */ = {
+			isa = PBXGroup;
+			children = (
+				660AC4E520FDE3B000C865FF /* GCDViewController.h */,
+				660AC4E620FDE3B000C865FF /* GCDViewController.m */,
+				660A857920FD9D7700D6F05C /* SemaphoreViewController.h */,
+				660A857A20FD9D7700D6F05C /* SemaphoreViewController.m */,
+				30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */,
+				660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */,
+			);
+			path = DispatchQueue;
+			sourceTree = "<group>";
+		};
+		66556300210023F9007865E1 /* PerformanceOptimization */ = {
+			isa = PBXGroup;
+			children = (
+				661FAD7420FED2C700946543 /* DrawUIImage.h */,
+				661FAD7520FED2C700946543 /* DrawUIImage.m */,
+				6607BE1220FF081A00E7A90B /* OffScreenRendering.h */,
+				6607BE1320FF081A00E7A90B /* OffScreenRendering.m */,
+				CD85659420B6663400B7DD95 /* AppBetter.swift */,
+				66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */,
+				660A857620FD967600D6F05C /* XLsn0wLayer.h */,
+				660A857720FD967600D6F05C /* XLsn0wLayer.m */,
+				661FAD7120FECFE000946543 /* XLsn0wView.h */,
+				661FAD7220FECFE000946543 /* XLsn0wView.m */,
+			);
+			path = PerformanceOptimization;
+			sourceTree = "<group>";
+		};
+		6655630121002422007865E1 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3073C5E61FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift */,
+				3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */,
+				660AC4E820FDF4A600C865FF /* CAAnimationViewController.h */,
+				660AC4E920FDF4A600C865FF /* CAAnimationViewController.m */,
+			);
+			path = CAAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
