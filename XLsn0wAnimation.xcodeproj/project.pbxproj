@@ -24,6 +24,7 @@
 		660AC4EA20FDF4A600C865FF /* CAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660AC4E920FDF4A600C865FF /* CAAnimationViewController.m */; };
 		661FAD7320FECFE000946543 /* XLsn0wView.m in Sources */ = {isa = PBXBuildFile; fileRef = 661FAD7220FECFE000946543 /* XLsn0wView.m */; };
 		661FAD7620FED2C700946543 /* DrawUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 661FAD7520FED2C700946543 /* DrawUIImage.m */; };
+		665563042100252C007865E1 /* UIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665563032100252C007865E1 /* UIViewAnimationViewController.m */; };
 		66E0B06620FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */; };
 		CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85659420B6663400B7DD95 /* AppBetter.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,8 @@
 		661FAD7220FECFE000946543 /* XLsn0wView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLsn0wView.m; sourceTree = "<group>"; };
 		661FAD7420FED2C700946543 /* DrawUIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawUIImage.h; sourceTree = "<group>"; };
 		661FAD7520FED2C700946543 /* DrawUIImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawUIImage.m; sourceTree = "<group>"; };
+		665563022100252C007865E1 /* UIViewAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewAnimationViewController.h; sourceTree = "<group>"; };
+		665563032100252C007865E1 /* UIViewAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationViewController.m; sourceTree = "<group>"; };
 		66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hidden_alpha_opaque_clearColor.swift; sourceTree = "<group>"; };
 		CD85659420B6663400B7DD95 /* AppBetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +157,8 @@
 				3073C5D61FD7D02D00DAF994 /* XLsn0wAnimation.swift */,
 				660AC4E820FDF4A600C865FF /* CAAnimationViewController.h */,
 				660AC4E920FDF4A600C865FF /* CAAnimationViewController.m */,
+				665563022100252C007865E1 /* UIViewAnimationViewController.h */,
+				665563032100252C007865E1 /* UIViewAnimationViewController.m */,
 			);
 			path = CAAnimation;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				660A857B20FD9D7700D6F05C /* SemaphoreViewController.m in Sources */,
 				661FAD7620FED2C700946543 /* DrawUIImage.m in Sources */,
 				6607BE1D20FF115500E7A90B /* SubOperation.m in Sources */,
+				665563042100252C007865E1 /* UIViewAnimationViewController.m in Sources */,
 				660A857820FD967600D6F05C /* XLsn0wLayer.m in Sources */,
 				660AC4DE20FDD58500C865FF /* DispatchSemaphoreViewController.swift in Sources */,
 				CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */,
