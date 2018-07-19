@@ -13,11 +13,8 @@
 /*
  1. 检测工具：Core Animation工具检测离屏渲染
  
- 可以在Xcode->Open Develeper Tools->Instruments中找到(或者直接  cmd + i ),如下图
- 
- Core Animation
- Core Animation 调试面板
- 
+ 可以在Xcode->Open Develeper Tools->Instruments中找到
+
  
  我们需要了解两个区域：
  

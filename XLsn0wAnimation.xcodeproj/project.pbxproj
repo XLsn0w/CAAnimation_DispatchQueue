@@ -27,6 +27,7 @@
 		665563042100252C007865E1 /* UIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665563032100252C007865E1 /* UIViewAnimationViewController.m */; };
 		665563062100296F007865E1 /* UIImageExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665563052100296F007865E1 /* UIImageExtend.swift */; };
 		6655630921002CA5007865E1 /* ImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655630721002CA5007865E1 /* ImageCropperViewController.m */; };
+		6655630D21003DE6007865E1 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655630C21003DE6007865E1 /* WKWebViewController.m */; };
 		66E0B06620FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */; };
 		CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85659420B6663400B7DD95 /* AppBetter.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,8 @@
 		665563052100296F007865E1 /* UIImageExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtend.swift; sourceTree = "<group>"; };
 		6655630721002CA5007865E1 /* ImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropperViewController.m; sourceTree = "<group>"; };
 		6655630821002CA5007865E1 /* ImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCropperViewController.h; sourceTree = "<group>"; };
+		6655630B21003DE6007865E1 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		6655630C21003DE6007865E1 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		66E0B06520FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hidden_alpha_opaque_clearColor.swift; sourceTree = "<group>"; };
 		CD85659420B6663400B7DD95 /* AppBetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3073C5D41FD7D02D00DAF994 /* AppDelegate.swift */,
+				6655630A21003DBC007865E1 /* WKWebView */,
 				6655630121002422007865E1 /* CAAnimation */,
 				66556300210023F9007865E1 /* PerformanceOptimization */,
 				665562FF2100237E007865E1 /* DispatchQueue */,
@@ -169,6 +173,15 @@
 				665563032100252C007865E1 /* UIViewAnimationViewController.m */,
 			);
 			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		6655630A21003DBC007865E1 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				6655630B21003DE6007865E1 /* WKWebViewController.h */,
+				6655630C21003DE6007865E1 /* WKWebViewController.m */,
+			);
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 				660AC4E720FDE3B000C865FF /* GCDViewController.m in Sources */,
 				6607BE1420FF081A00E7A90B /* OffScreenRendering.m in Sources */,
 				6607BE1A20FF0BA300E7A90B /* NSOperationViewController.m in Sources */,
+				6655630D21003DE6007865E1 /* WKWebViewController.m in Sources */,
 				3073C5E71FD7D3DA00DAF994 /* CoreAnimationKeyPath.swift in Sources */,
 				3073C5D71FD7D02D00DAF994 /* XLsn0wAnimation.swift in Sources */,
 				6655630921002CA5007865E1 /* ImageCropperViewController.m in Sources */,

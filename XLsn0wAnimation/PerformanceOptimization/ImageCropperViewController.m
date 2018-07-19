@@ -12,6 +12,8 @@
 #define BOUNDCE_DURATION 0.3f
 #define kDeviceScale     [UIScreen mainScreen].scale
 
+#import <WebKit/WebKit.h>
+
 @interface ImageCropperViewController ()
 
 @property (nonatomic, retain) UIImage *originalImage;
@@ -38,6 +40,7 @@
     self.overlayView = nil;
     self.ratioView = nil;
 
+    
 }
 
 - (id)initWithImage:(UIImage *)originalImage cropFrame:(CGRect)cropFrame limitScaleRatio:(NSInteger)limitRatio {
@@ -55,7 +58,7 @@
     [super viewDidLoad];
     [self initView];
     [self initControlBtn];
-    
+
 }
 
 - (BOOL)shouldAutorotate {
