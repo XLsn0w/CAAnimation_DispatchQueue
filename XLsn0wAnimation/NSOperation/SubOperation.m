@@ -13,7 +13,14 @@
     BOOL        finished;
 }
 
-- (void)main {
+
+//自定义NSOperation
+//自定义NSOperation的步骤很简单：
+//重写- (void)main方法，在里面实现想执行的任务
+//重写- (void)main方法的注意点：
+//自己创建自动释放池（因为如果是异步操作，无法访问主线程的自动释放池）
+//经常通过- (BOOL)isCancelled方法检测操作是否被取消，对取消做出响应
+- (void)main {//////需要执行的任务
     @try {
         
         // Do the main work of the operation here.
@@ -23,6 +30,27 @@
     @catch(...) {
         // Do not rethrow exceptions.
     }
+    
+    for (NSInteger i = 0; i < 3; i++) {
+        NSLog(@"download1 -%zd-- %@", i, [NSThread currentThread]);
+    }
+    // 人为的判断是否执行取消操作，如果执行取消操作，就直接 return 不往下执行
+    if (self.isCancelled)
+        return;
+    
+    for (NSInteger i = 0; i < 3; i++) {
+        NSLog(@"download2 -%zd-- %@", i, [NSThread currentThread]);
+    }
+    // 人为的判断是否执行取消操作，如果执行取消操作，就直接 return 不往下执行
+    if (self.isCancelled)
+        return;
+    
+    for (NSInteger i = 0; i < 3; i++) {
+        NSLog(@"download3 -%zd-- %@", i, [NSThread currentThread]);
+    }
+    // 人为的判断是否执行取消操作，如果执行取消操作，就直接 return 不往下执行
+    if (self.isCancelled)
+        return;
 }
 
 - (void)completeOperation {
@@ -53,12 +81,6 @@
 //【3】、setQueuePriority：设置线程的优先级。例：[a setQueuePriority:NSOperationQueuePriorityVeryLow];一共有四个优先级：NSOperationQueuePriorityLow，NSOperationQueuePriorityNormal，NSOperationQueuePriorityHigh，NSOperationQueuePriorityVeryHigh。
 //当你添加一个操作到一个队列时，在对操作调用start之前，NSOperationQueue会浏览所有的操作，具有较高优先级的操作会优先执行，具有相同优先级的操作会按照添加到队列中顺序执行。
 //【4】、setCompletionBlock：设置回调方法，当操作结束后，会调用设置的回调block。这个block会在主线程中执行。
-//
-//
-//
-//说法二
-//
-//
 //
 //GCD是基于c的底层api，NSOperation属于object-c类。ios 首先引入的是NSOperation，IOS4之后引入了GCD和NSOperationQueue并且其内部是用gcd实现的。
 //
