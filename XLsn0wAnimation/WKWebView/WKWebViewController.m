@@ -337,31 +337,32 @@
     
     
     //修改字体大小 300%
-    
-    [ webView evaluateJavaScript:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '200%'" completionHandler:nil];
+//    调用js中的方法，例如我们可以这样使用这个方法?
+    [webView evaluateJavaScript:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '200%'" completionHandler:^(id _Nullable object, NSError * _Nullable error) {
+        
+        
+    }];
     
     //修改字体颜色  #9098b8
     
     [webView evaluateJavaScript:@"document.getElementsByTagName('body')[0].style.webkitTextFillColor= '#222222'" completionHandler:nil];
     
+//    oc调用js方法
+//    - (void)evaluateJavaScript:(NSString *)javaScriptString completionHandler:(void (^)(id,NSError *))completionHandler;
     
 
     //获取userId
     
     //传递userId给 js端
     
-    NSString * userId = @"1";
+    NSString* userId = @"1";
     
-    NSString * jsUserId;
+    NSString* jsUserId;
     
     if (!userId) {
-        
         jsUserId =@"";
-        
     }else{
-        
         jsUserId =userId;
-        
     }
     
     //之所以给userId重新赋值,貌似是如果userId为空null 那么传给js端,js说无法判断,只好说,如果userId为null,重新定义为空字符串.如果大家有好的建议,可以在下方留言.
@@ -378,29 +379,37 @@
     
     //js端获取传递值代码实现实例(此处为js端实现代码给大家粘出来示范的!!!):
     
-    //function sendKey(user_id){
-//    $("#input").val(user_id);
+//    在js方法中这样给oc发送通知：
+//    function postMessage() {
+//
+//        var body = {'message' :'这是消息'};
+//
+//        window.webkit.messageHandlers.myName.postMessage(body);
+//
+//    }
 }
 
 
 //依然是这个协议方法,获取注入方法名对象,获取js返回的状态值.
 #pragma mark - WKScriptMessageHandler
-
+//这是js方法中这样给oc发送通知 oc中收到通知后回调的方法：
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
-    
     //找到对应js端的方法名,获取messge.body
-    
-    if ([message.name isEqualToString:@"collectSendKey"]) {
-        
-        
-        
+    NSLog(@"%@", message.name);
+    NSLog(@"%@", message.webView);
+    NSLog(@"%@", message.frameInfo);
+    NSLog(@"%@", message.body);
+    if ([message.name isEqualToString:@"function"]) {
         NSLog(@"%@", message.body);
-        
-        
-        
     }
     
+    NSDictionary *body = [[NSDictionary alloc] initWithDictionary:message.body];
     
+    NSString *messageStr = [body objectForKey:@"message"];
+    
+    NSLog(@"%@", messageStr);
+    
+
     //js端判断如果userId为空,则返回字符串@"toLogin"  ,或者返回其它值.  js端代码实现实例(此处为js端实现代码给大家粘出来示范的!!!):
     
 //    function collectIsLogin(goods_id){
@@ -461,18 +470,17 @@
                 
             }
             
-        }
+}
         
         
-        //        3.在交互中,关于alert (单对话框)函数、confirm(yes/no对话框)函数、prompt(输入型对话框)函数时,实现代理协议 WKUIDelegate ,则系统方法里有三个对应的协议方法.大家可以进入WKUIDelegate 协议类里面查看.下面具体协议方法实现,也给大家粘出来,以供参考.
+//在交互中,关于alert (单对话框)函数、confirm(yes/no对话框)函数、prompt(输入型对话框)函数时,实现代理协议 WKUIDelegate ,
+//则系统方法里有三个对应的协议方法.大家可以进入WKUIDelegate 协议类里面查看.下面具体协议方法实现,也给大家粘出来,以供参考.
+
+#pragma mark - JS-OC WKUIDelegate
         
-#pragma mark - WKUIDelegate
-        
-        - (void)webViewDidClose:(WKWebView *)webView {
-            
-            NSLog(@"%s", __FUNCTION__);
-            
-        }
+ - (void)webViewDidClose:(WKWebView *)webView {
+     NSLog(@"%s", __FUNCTION__);
+}
         
         // 在JS端调用alert函数时，会触发此代理方法。
         
@@ -480,25 +488,25 @@
         
         // 在原生得到结果后，需要回调JS，是通过completionHandler回调
         
-        - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
             
-            NSLog(@"%s", __FUNCTION__);
-            
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"alert" message:@"JS调用alert" preferredStyle:UIAlertControllerStyleAlert];
-            
-            [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                
-                completionHandler();
-                
-            }]];
-            
-            
-            
-            [self presentViewController:alert animated:YES completion:NULL];
-            
-            NSLog(@"%@", message);
-            
-        }
+    NSLog(@"%s", __FUNCTION__);
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"alert" message:@"JS调用alert" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        completionHandler();
+        
+    }]];
+    
+    
+    
+    [self presentViewController:alert animated:YES completion:NULL];
+    
+    NSLog(@"%@", message);
+
+}
         
         
         

@@ -72,7 +72,63 @@ import UIKit
  注意点: 如果fillMode=kCAFillModeForwards和removedOnComletion=NO
  那么在动画执行完毕后，图层会保持显示动画执行后的状态。但在实质上，图层的属性值还是动画执行前的初始值，并没有真正被改变。
  
-*/
-class CoreAnimation_guide: NSObject {
+ CALayer Animatable Properties
+ 我们可以通过animationWithKeyPath键值对的方式来改变动画
+ 
+ keyPath的值：
+ 
+ anchorPoint
+ 
+ backgroundColor
+ 
+ backgroundFilters
+ 
+ borderColor
+ 
+ borderWidth
+ 
+ bounds
+ 
+ compositingFilter
+ 
+ contents
+ 
+ contentsRect
+ 
+ cornerRadius
+ 
+ doubleSided
+ 
+ filters
+ 
+ frame
+ 
+ hidden
+ 
+ mask
+ 
+ masksToBounds
+ 
+ opacity
+ 
+ position
+ 
+ shadowColor
+ 
+ shadowOffset
+ 
+ shadowOpacity
+ 
+ shadowRadius
+ 
+ sublayers
+ 
+ sublayerTransform
+ 
+ transform
+ 
+ zPosition
 
-}
+ 
+*/
+
