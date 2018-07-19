@@ -47,6 +47,56 @@
     [view setImage:destImg];
 }
 
+- (UIImage *)draw_rect:(CGRect)rect {
+    
+    // 1. 开启图像上下文 － 可以异步执行！生成结果之后，在主线程更新UI
+    // 输出的图像的 scale == 1，在 iPhone 7+ 上不清楚
+    // UIGraphicsBeginImageContext(_imageView.bounds.size);
+    // scale 设置为 0，会使用主屏幕的分辨率，一定记住用下面的方法 (240 * 128) => (720 * 384)
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    
+    // 绘制内容
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:rect];
+    
+    path.lineWidth = 2;
+    [path stroke];
+    
+    // 5. 从图像上下文，获取绘制结果
+    UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 6. 关闭图像上下文
+    UIGraphicsEndImageContext();
+    
+    return result;
+}
+
+// 1. 生成`图像`，设置给 imageView
+- (UIImage *)drawDemo1:(CGRect)rect {
+    
+    // 1. 开启图像上下文 － 可以异步执行！生成结果之后，在主线程更新UI
+    UIGraphicsBeginImageContext(rect.size);
+    
+    // 2. 图形上下文 - 绘图函数都是一样的，如果选择不同的上下文，结果会绘制到不同的目标
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    // 给上下文添加矩形
+    CGContextAddRect(ctx, CGRectMake(0, 0, 100, 100));
+    
+    // 设置颜色
+    [[UIColor blueColor] set];
+    
+    // 让上下文绘制内容 - 填充 + 边线
+    CGContextDrawPath(ctx, kCGPathFillStroke);
+    
+    // 5. 从图像上下文，获取绘制结果
+    UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 6. 关闭图像上下文
+    UIGraphicsEndImageContext();
+    
+    return result;
+}
+
 
 - (UIImage*)draw_another_image_on_Image {///在UIImage上绘制另一个图像
     CGFloat width = 0.0, height = 0.0;

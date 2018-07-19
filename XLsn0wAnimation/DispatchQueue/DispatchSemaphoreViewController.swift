@@ -48,10 +48,11 @@ class DispatchSemaphoreViewController: UIViewController {
         
         // 同步队列
         let serialQueue = DispatchQueue(label: "queuename")
+        print(serialQueue)
         
         // 并发队列
         let concurrentQueue = DispatchQueue(label: "queuename", attributes: .concurrent)
-        
+        print(concurrentQueue)
 //        推迟时间后执行
 //        原先的dispatch_time_t现在由DispatchTime对象表示。可以用静态方法now获得当前时间，然后再通过加上一个DispatchTimeInterval枚举来获得一个需要延迟的时间。
         
@@ -61,8 +62,8 @@ class DispatchSemaphoreViewController: UIViewController {
             
         }
 
-        
-            let three = DispatchTime.now() + 3.0
+        let three = DispatchTime.now() + 3.0
+        print(three)
   
 //          如果想在dispatch_queue中所有的任务执行完成后再做某种操作可以使用DispatchGroup。原先的dispatch_group_t由现在的DispatchGroup对象代替。
         

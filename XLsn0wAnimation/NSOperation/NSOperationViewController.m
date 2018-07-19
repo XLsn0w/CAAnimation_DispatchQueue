@@ -41,7 +41,7 @@
 //    //调用start方法开始执行操作，一旦执行操作，就会调用target的sel方法
 //    - (void)start;
     
-    NSInvocationOperation *iop = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(download1:) object:nil];
+    NSInvocationOperation *iop = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(download1) object:nil];
     [iop start];
     
     //    操作优先级
@@ -278,7 +278,7 @@
         
         // 5.回到主线程
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            self.imageView.image = image;
+            ///赋值image
         }];
     }];
     

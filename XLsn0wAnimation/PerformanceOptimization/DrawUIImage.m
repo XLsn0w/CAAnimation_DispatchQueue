@@ -10,13 +10,24 @@
 
 @implementation DrawUIImage
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+// UIGraphicsGetCurrentContext - 视图绘制，必须在 drawRect 方法中！
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
+    
+    // 1. 图形上下文 - 绘图函数都是一样的，如果选择不同的上下文，结果会绘制到不同的目标
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    // 给上下文添加矩形
+    CGContextAddRect(ctx, CGRectMake(0, 0, 100, 100));
+    
+    // 设置颜色
+    [[UIColor blueColor] set];
+    
+    // 让上下文绘制内容 - 填充 + 边线
+    CGContextDrawPath(ctx, kCGPathFillStroke);
+    
 }
- 
+
+ /*
  UIGraphicsBeginImageContext
  创建一个基于位图的上下文（context）,并将其设置为当前上下文(context)。方法声明如下：
  void UIGraphicsBeginImageContext(CGSizeMake(240，240));
