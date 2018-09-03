@@ -13,6 +13,8 @@
 		3073C5DF1FD7D02D00DAF994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3073C5DD1FD7D02D00DAF994 /* LaunchScreen.storyboard */; };
 		3073C5E71FD7D3DA00DAF994 /* keyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3073C5E61FD7D3DA00DAF994 /* keyPath.swift */; };
 		30DC50581FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */; };
+		35EF4A18213D6BEF00C00C58 /* AsyncQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF4A17213D6BEF00C00C58 /* AsyncQueue.swift */; };
+		35EF4A27213D783800C00C58 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF4A26213D783800C00C58 /* TimerViewController.m */; };
 		6607BE1420FF081A00E7A90B /* OffScreenRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 6607BE1320FF081A00E7A90B /* OffScreenRendering.m */; };
 		6607BE1A20FF0BA300E7A90B /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6607BE1920FF0BA300E7A90B /* NSOperationViewController.m */; };
 		6607BE1D20FF115500E7A90B /* SubOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6607BE1C20FF115500E7A90B /* SubOperation.m */; };
@@ -42,6 +44,9 @@
 		3073C5E01FD7D02D00DAF994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3073C5E61FD7D3DA00DAF994 /* keyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyPath.swift; sourceTree = "<group>"; };
 		30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLsn0wDispatchQueue.swift; sourceTree = "<group>"; };
+		35EF4A17213D6BEF00C00C58 /* AsyncQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncQueue.swift; sourceTree = "<group>"; };
+		35EF4A25213D783800C00C58 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		35EF4A26213D783800C00C58 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		6607BE1220FF081A00E7A90B /* OffScreenRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OffScreenRendering.h; sourceTree = "<group>"; };
 		6607BE1320FF081A00E7A90B /* OffScreenRendering.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OffScreenRendering.m; sourceTree = "<group>"; };
 		6607BE1820FF0BA300E7A90B /* NSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
@@ -134,10 +139,13 @@
 			children = (
 				660AC4E520FDE3B000C865FF /* GCDViewController.h */,
 				660AC4E620FDE3B000C865FF /* GCDViewController.m */,
+				35EF4A25213D783800C00C58 /* TimerViewController.h */,
+				35EF4A26213D783800C00C58 /* TimerViewController.m */,
 				660A857920FD9D7700D6F05C /* SemaphoreViewController.h */,
 				660A857A20FD9D7700D6F05C /* SemaphoreViewController.m */,
 				30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */,
 				660AC4DD20FDD58500C865FF /* DispatchSemaphoreViewController.swift */,
+				35EF4A17213D6BEF00C00C58 /* AsyncQueue.swift */,
 			);
 			path = DispatchQueue;
 			sourceTree = "<group>";
@@ -257,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35EF4A27213D783800C00C58 /* TimerViewController.m in Sources */,
 				30DC50581FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift in Sources */,
 				665563062100296F007865E1 /* UIImageExtend.swift in Sources */,
 				660AC4EA20FDF4A600C865FF /* CAAnimationViewController.m in Sources */,
@@ -266,6 +275,7 @@
 				665563042100252C007865E1 /* UIViewAnimationViewController.m in Sources */,
 				660A857820FD967600D6F05C /* XLsn0wLayer.m in Sources */,
 				6655634921005BCB007865E1 /* AppDelegate.swift in Sources */,
+				35EF4A18213D6BEF00C00C58 /* AsyncQueue.swift in Sources */,
 				660AC4DE20FDD58500C865FF /* DispatchSemaphoreViewController.swift in Sources */,
 				CD85659520B6663400B7DD95 /* AppBetter.swift in Sources */,
 				661FAD7320FECFE000946543 /* XLsn0wView.m in Sources */,
