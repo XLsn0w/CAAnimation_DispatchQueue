@@ -15,6 +15,7 @@
 		30DC50581FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC50571FDE71EA0011AA16 /* XLsn0wDispatchQueue.swift */; };
 		35949842213D7F2B00579E9E /* WebViewJavascriptBridgeDemo.zip in Resources */ = {isa = PBXBuildFile; fileRef = 35949841213D7F2A00579E9E /* WebViewJavascriptBridgeDemo.zip */; };
 		35949845213D7F5100579E9E /* WebViewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35949844213D7F5100579E9E /* WebViewDelegateViewController.m */; };
+		35949848213D81D800579E9E /* JSObjCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35949847213D81D800579E9E /* JSObjCModel.m */; };
 		35EF4A18213D6BEF00C00C58 /* AsyncQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF4A17213D6BEF00C00C58 /* AsyncQueue.swift */; };
 		35EF4A27213D783800C00C58 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF4A26213D783800C00C58 /* TimerViewController.m */; };
 		35EF4A37213D7E6E00C00C58 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF4A2F213D7E6E00C00C58 /* WebViewJavascriptBridgeBase.m */; };
@@ -53,6 +54,8 @@
 		35949841213D7F2A00579E9E /* WebViewJavascriptBridgeDemo.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = WebViewJavascriptBridgeDemo.zip; sourceTree = "<group>"; };
 		35949843213D7F5100579E9E /* WebViewDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewDelegateViewController.h; sourceTree = "<group>"; };
 		35949844213D7F5100579E9E /* WebViewDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewDelegateViewController.m; sourceTree = "<group>"; };
+		35949846213D81D800579E9E /* JSObjCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSObjCModel.h; sourceTree = "<group>"; };
+		35949847213D81D800579E9E /* JSObjCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSObjCModel.m; sourceTree = "<group>"; };
 		35EF4A17213D6BEF00C00C58 /* AsyncQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncQueue.swift; sourceTree = "<group>"; };
 		35EF4A25213D783800C00C58 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		35EF4A26213D783800C00C58 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 			children = (
 				35949843213D7F5100579E9E /* WebViewDelegateViewController.h */,
 				35949844213D7F5100579E9E /* WebViewDelegateViewController.m */,
+				35949846213D81D800579E9E /* JSObjCModel.h */,
+				35949847213D81D800579E9E /* JSObjCModel.m */,
 			);
 			path = WebViewDelegate;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				66E0B06620FC87D2000C0D51 /* hidden_alpha_opaque_clearColor.swift in Sources */,
 				35EF4A37213D7E6E00C00C58 /* WebViewJavascriptBridgeBase.m in Sources */,
 				660AC4E720FDE3B000C865FF /* GCDViewController.m in Sources */,
+				35949848213D81D800579E9E /* JSObjCModel.m in Sources */,
 				6607BE1420FF081A00E7A90B /* OffScreenRendering.m in Sources */,
 				6607BE1A20FF0BA300E7A90B /* NSOperationViewController.m in Sources */,
 				6655630D21003DE6007865E1 /* WKWebViewController.m in Sources */,
